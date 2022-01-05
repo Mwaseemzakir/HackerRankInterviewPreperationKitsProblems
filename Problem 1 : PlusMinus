@@ -1,0 +1,16 @@
+public static void plusMinus(List<int> arr)
+    {
+        float negative,positive,zero,total;
+        total = arr.Count();
+        float negativeRatio,positiveRatio,zeroRatio;
+         negative = arr.Where(x => x < 0).Count();
+         positive = arr.Where(x => x > 0).Count();
+         zero = arr.Where(x => x == 0).Count();
+         negativeRatio = negative / total;
+         positiveRatio = positive / total;
+         zeroRatio = zero / total;
+         Console.WriteLine(positiveRatio.ToString("N6"));
+         Console.WriteLine(negativeRatio.ToString("N6"));
+         Console.WriteLine(zeroRatio.ToString("N6"));
+
+    }
